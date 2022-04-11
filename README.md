@@ -73,7 +73,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Inspiration from Microverse great curriculumm then a great appreciation to Microverse community.
+- Inspiration from Microverse great curriculumm then a great appreciation to [Microverse](https://bit.ly/MicroverseTN) community.
 
 ## Credits
 
