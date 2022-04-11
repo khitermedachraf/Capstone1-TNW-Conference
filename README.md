@@ -1,2 +1,87 @@
-# Capstone-TNW-Conference-
-Europe's leading tech festival: TNW Conference is a 2-day technology event in the greater Amsterdam area, where industry leaders and tech enthusiasts alike come together, to explore how tech will shape the world of tomorrow.
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
+# **_Capstone-TNW-Conference_** project
+
+> Description: This is my final project for HTML & CSS MODULE from the microverse curriculum.
+> 
+> This project is meant to test student ability's on being able to put together all that they have learnt in a module to ensure they mastered it well.
+
+## :red_circle: Live Demo
+
+[Live Preview Link](https://github.com/khitermedachraf/Capstone-TNW-Conference)
+
+## :hammer: Built With
+
+- HTML5/ CSS3
+- Bootstrap
+- javascript
+- Git and GitHub
+
+### Prerequisites
+
+- A web browser (like Google Chrome, Opera...)
+- A code editor.
+
+## Getting Started
+
+To get a local copy (open and running), follow these simple steps.
+
+### Setup
+
+- Download or Clone Repository.
+- In case you downloaded repository Extract ZIP Folder.
+
+### Installation
+
+- One folder in your text editor.
+- Run `npm install` command to install all dependencies.
+
+_N.B: Make sure that you have node installed in your commputer, if not [Download Node](https://nodejs.org/en/)_
+
+## :blue_book: Learning Objectives
+
+- Use semantic HTML tags.
+- Apply best practices in HTML code.
+- Use CSS selectors correctly.
+- Use CSS box model.
+- Use Flexbox to place elements in the page.
+- Demonstrate ability to create UIs adaptable to different screen sizes using media queries.
+- Use GitHub Pages to deploy web pages.
+- Apply JavaScript best practices and language style guides in code.
+- Use JavaScript to manipulate DOM elements.
+- Use JavaScript events.
+- Use objects to store and access data.
+- Communicate technical concepts to other technical people.
+
+## Authors
+
+👤 **Achraf KHITER**
+
+- LinkedIn: [khitermed](https://www.linkedin.com/in/khitermed/)
+- GitHub: [@khitermedachraf](https://github.com/khitermedachraf)
+- Twitter: [@@AchrafKhiter](https://twitter.com/AchrafKhiter)
+
+## 🤝 Contributing 
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Inspiration from Microverse great curriculumm then a great appreciation to Microverse community.
+
+## Credits
+
+- The original design ideal by [Cindy Shin in Behance](https://www.behance.net/adagio07)
+
+- Project from [Microverse](https://bit.ly/MicroverseTN) html & css module
+- Images inspired by this [All avatar images](https://pravatar.cc/images)
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
