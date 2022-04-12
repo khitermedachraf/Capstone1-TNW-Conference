@@ -18,3 +18,21 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+
+/* Define global CSS variables */
+:root {
+  --red: #ec5242;
+  --black: #272a31;
+  --grey: #d3d3d3;
+}
+
+header {
+  background-image: url("../img/mobile_bg.png");
+  background-size: cover;
+  height: 150px;
+}
+.menuIcon {
+  width: 4em;
+  margin: 1em 2em;
+  color: var(--black);
+}
