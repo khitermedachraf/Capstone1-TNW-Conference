@@ -1,15 +1,18 @@
 /* Import the specific font family we are going to use */
-@import url("http://fonts.cdnfonts.com/css/cocogoose");
+@import url("http://fonts.cdnfonts.com/css/cocogoose?styles=44178");
 @import url("http://fonts.cdnfonts.com/css/lato");
 
 *,
 *::before,
 *::after {
   font-family: "COCOGOOSE", "Lato";
+  font-weight: lighter;
+  font-size: small;
   padding: 0;
   box-sizing: border-box;
   margin: 0;
 }
+
 html,
 body {
   width: 100%;
@@ -26,13 +29,102 @@ body {
   --grey: #d3d3d3;
 }
 
+.primary-color {
+  color: var(--red);
+}
+
+.secondary-color {
+  color: var(--black);
+}
+
+.third-color {
+  color: var(--grey);
+}
+
 header {
   background-image: url("../img/mobile_bg.png");
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 150px;
+  height: 100px;
 }
 .menuIcon {
   width: 4em;
   margin: 1em 2em;
-  color: var(--black);
+}
+.w-150 {
+  width: 150%;
+}
+
+.intro {
+  background-image: url("../img/mobile_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -200px;
+  height: 410px;
+}
+
+.introH1 {
+  background-image: url(../img/orange.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  width: 95%;
+}
+
+.timing > p:first-child {
+  font-weight: 950;
+  font-size: larger;
+  color: #484b51;
+}
+
+#program {
+  background-image: url(../img/fill-bg.png);
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ul,
+li,
+a {
+  padding-left: 0;
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.short-line {
+  width: 1.78125rem;
+  margin: 0.75rem 0;
+  height: 0.15rem;
+  background-color: var(--red);
+}
+
+.program-item {
+  display: flex;
+  width: 80%;
+  min-width: 385px;
+  align-self: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+.attend-btn {
+  letter-spacing: 0.03em;
+  padding: 1.5rem;
+  cursor: pointer;
+  background-color: var(--red);
+  border-radius: 5px;
+  border: none;
+}
+
+.attend-btn:hover {
+  border: 1.5px solid var(--red);
+  opacity: 0.9;
 }
