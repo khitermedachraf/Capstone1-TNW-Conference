@@ -41,7 +41,8 @@ body {
   color: var(--grey);
 }
 
-header {
+/* Styling the Index.html page */
+.index-header {
   background-image: url("../img/mobile_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -159,4 +160,24 @@ a {
   border: 2px solid var(--black);
   background-color: var(--red);
   color: white;
+}
+
+/* Styling the aboutUS.html page */
+
+#about-TNW {
+  background-image: url("../img/mobile_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 475px;
+}
+
+.logo {
+  width: 400px;
+  border: 1px solid var(--grey);
+  border-radius: 4px;
+}
+
+.logo:hover {
+  border: 2px solid var(--grey);
+  cursor: pointer;
 }
