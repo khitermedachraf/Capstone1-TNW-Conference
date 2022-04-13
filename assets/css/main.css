@@ -43,7 +43,7 @@ body {
 
 /* Styling the Index.html page */
 .index-header {
-  background-image: url("../img/mobile_bg.png");
+  background-image: url("../../img/mobile_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100px;
@@ -59,7 +59,7 @@ body {
 }
 
 .intro {
-  background-image: url("../img/mobile_bg.png");
+  background-image: url("../../img/mobile_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: -200px;
@@ -67,7 +67,7 @@ body {
 }
 
 .introH1 {
-  background-image: url(../img/orange.jpeg);
+  background-image: url(../../img/orange.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-clip: text;
@@ -83,7 +83,7 @@ body {
 }
 
 #program {
-  background-image: url(../img/fill-bg.png);
+  background-image: url(../../img/fill-bg.png);
   background-color: var(--black);
   display: flex;
   flex-direction: column;
@@ -160,55 +160,4 @@ a {
   border: 2px solid var(--black);
   background-color: var(--red);
   color: white;
-}
-
-/* Styling the aboutUS.html page */
-
-#about-TNW {
-  background-image: url("../img/mobile_bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 475px;
-}
-
-.logo {
-  width: 400px;
-  border: 1px solid var(--grey);
-  border-radius: 4px;
-}
-
-.logo:hover {
-  border: 2px solid var(--grey);
-  cursor: pointer;
-}
-
-.conferences-list img {
-  width: 85%;
-  height: 225px;
-  margin-top: 2em;
-}
-
-.conferences-list li {
-  position: relative;
-  text-align: center;
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  z-index: 1;
-}
-
-.bg-blur {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: var(--red);
-  width: 84%;
-  height: 220px;
-  opacity: 0.7;
 }

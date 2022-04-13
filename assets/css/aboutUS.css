@@ -1,0 +1,120 @@
+/* Import the specific font family we are going to use */
+@import url("http://fonts.cdnfonts.com/css/cocogoose?styles=44178");
+@import url("http://fonts.cdnfonts.com/css/lato");
+
+*,
+*::before,
+*::after {
+  font-family: "COCOGOOSE", "Lato";
+  font-weight: lighter;
+  font-size: small;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+ul,
+li,
+a {
+  padding-left: 0;
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.menuIcon {
+  width: 4em;
+  margin: 1em 2em;
+}
+
+.short-line {
+  width: 5.5rem;
+  margin: 0.75rem 0;
+  height: 0.15rem;
+  background-color: var(--red);
+}
+
+/* Define global CSS variables */
+:root {
+  --red: #ec5242;
+  --black: #272a31;
+  --grey: #d3d3d3;
+}
+
+.primary-color {
+  color: var(--red);
+}
+
+.secondary-color {
+  color: var(--black);
+}
+
+.third-color {
+  color: var(--grey);
+}
+
+/* Styling the aboutUS.html page */
+
+#about-TNW {
+  background-image: url("../../img/mobile_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 475px;
+}
+
+.logo {
+  width: 400px;
+  border: 1px solid var(--grey);
+  border-radius: 4px;
+}
+
+.logo:hover {
+  border: 2px solid var(--grey);
+  cursor: pointer;
+}
+
+.conferences-list img {
+  width: 85%;
+  height: 225px;
+  margin-top: 2em;
+}
+
+.conferences-list img:hover {
+  cursor: pointer;
+}
+
+.conferences-list li {
+  position: relative;
+  text-align: center;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.bg-blur {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--red);
+  width: 85%;
+  height: 220px;
+  opacity: 0.7;
+  cursor: pointer;
+}
