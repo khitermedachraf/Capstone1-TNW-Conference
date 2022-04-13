@@ -47,10 +47,12 @@ header {
   background-size: cover;
   height: 100px;
 }
+
 .menuIcon {
   width: 4em;
   margin: 1em 2em;
 }
+
 .w-150 {
   width: 150%;
 }
@@ -86,6 +88,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: small;
 }
 
 ul,
@@ -98,7 +101,7 @@ a {
 }
 
 .short-line {
-  width: 1.78125rem;
+  width: 5.5rem;
   margin: 0.75rem 0;
   height: 0.15rem;
   background-color: var(--red);
@@ -115,7 +118,8 @@ a {
   padding: 1em;
 }
 
-.attend-btn {
+.attend-btn,
+.showMore-btn {
   letter-spacing: 0.03em;
   padding: 1.5rem;
   cursor: pointer;
@@ -127,4 +131,32 @@ a {
 .attend-btn:hover {
   border: 1.5px solid var(--red);
   opacity: 0.9;
+}
+
+.speacker-img {
+  width: 10em;
+  height: 10em;
+  margin: 1em;
+}
+
+.short-grey-line {
+  width: 2.5rem;
+  margin: 0.75rem 0;
+  height: 0.25rem;
+  background-color: var(--grey);
+}
+.speackers-list > li {
+  margin: 1em;
+}
+
+.showMore-btn {
+  border: 1px solid var(--black);
+  background-color: whitesmoke;
+  width: 100%;
+  min-width: 450px;
+}
+.showMore-btn:hover {
+  border: 2px solid var(--black);
+  background-color: var(--red);
+  color: white;
 }
