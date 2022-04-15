@@ -10,6 +10,15 @@
 
 [Live Preview Link](https://github.com/khitermedachraf/Capstone-TNW-Conference)
 
+## Requirements
+
+Build a website for an event by following a [design from behance](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015), using:
+
+- HTML5 and CSS3 (or a CSS framework) along with best practices.
+- CSS3 media queries for the desktop version.
+- JavaScript.
+- Linters (Lighthouse, Webhint, Stylelint, Eslint).
+
 ## :hammer: Built With
 
 - HTML5/ CSS3
