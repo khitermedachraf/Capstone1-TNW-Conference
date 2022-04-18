@@ -118,3 +118,37 @@ a {
   opacity: 0.7;
   cursor: pointer;
 }
+
+.partners {
+  background-color: var(--black);
+  filter: brightness(1.4);
+  color: white;
+  padding: 1em;
+}
+
+.partners-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 0 0;
+  gap: 1rem;
+  width: 90%;
+  flex-wrap: wrap;
+}
+
+.partners-logos img {
+  display: block;
+  width: 30%;
+  max-width: 125px;
+  filter: grayscale(100%) contrast(30%);
+}
+
+footer img {
+  filter: grayscale(150%) contrast(150%);
+  max-width: 175px;
+}
+
+footer p {
+  margin-bottom: 0px;
+  color: var(--black);
+}
