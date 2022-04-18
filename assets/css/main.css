@@ -162,7 +162,7 @@ a {
   color: white;
 }
 
-.only-desktop{
+.only-desktop {
   display: none;
 }
 /* Add styles for the desktop version */
@@ -172,15 +172,41 @@ a {
     display: none;
   }
 
-  .index-header {
-    background-image: none;
+  .only-desktop {
+    display: block;
   }
 
-  .dark-nav{
+  .index-header {
+    background-image: none;
+    height: max-content;
+  }
+
+  .dark-nav {
     background-color: var(--black);
   }
 
-  .dark-nav img{
+  .dark-nav img {
     width: 75%;
+  }
+
+  .white-nav ul li a:hover,
+  .white-nav ul li a:focus {
+    color: var(--red);
+  }
+
+  .white-nav img {
+    width: 8em;
+  }
+
+  .get-tickets-btn {
+    padding: 1em;
+    border: 5px solid var(--red);
+    color: var(--red);
+    background-color: inherit;
+  }
+  .get-tickets-btn:hover {
+    border-radius: 7px;
+    color: white;
+    background-color: var(--red);
   }
 }
