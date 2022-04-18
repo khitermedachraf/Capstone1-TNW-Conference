@@ -143,6 +143,10 @@ a {
   filter: grayscale(100%) contrast(30%);
 }
 
+.partners-logos img:hover{
+  filter: grayscale(100%) contrast(60%);
+}
+
 footer img {
   filter: grayscale(150%) contrast(150%);
   max-width: 175px;
