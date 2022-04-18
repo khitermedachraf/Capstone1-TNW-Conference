@@ -127,11 +127,11 @@ a {
   background-color: var(--red);
   border-radius: 5px;
   border: none;
+  opacity: 0.85;
 }
 
 .attend-btn:hover {
-  border: 1.5px solid var(--red);
-  opacity: 0.9;
+  opacity: 1;
 }
 
 .speacker-img {
@@ -160,4 +160,27 @@ a {
   border: 2px solid var(--black);
   background-color: var(--red);
   color: white;
+}
+
+.only-desktop{
+  display: none;
+}
+/* Add styles for the desktop version */
+
+@media only screen and (min-width: 768px) {
+  .only-mobile {
+    display: none;
+  }
+
+  .index-header {
+    background-image: none;
+  }
+
+  .dark-nav{
+    background-color: var(--black);
+  }
+
+  .dark-nav img{
+    width: 75%;
+  }
 }
