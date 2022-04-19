@@ -157,9 +157,9 @@ a {
   min-width: 450px;
 }
 .showMore-btn:hover {
-  border: 2px solid var(--black);
   background-color: var(--red);
   color: white;
+  opacity: 1;
 }
 
 .only-desktop {
@@ -208,5 +208,38 @@ a {
     border-radius: 7px;
     color: white;
     background-color: var(--red);
+  }
+
+  .intro {
+    background-image: url("../../img/desktop-bg.png");
+    background-repeat: repeat-y;
+    background-size: cover;
+    height: max-content;
+    padding-left: 12%;
+    padding-top: 4em;
+  }
+
+  .intro p {
+    font-size: 125%;
+  }
+
+  .introH1 {
+    max-width: 70%;
+    font-size: 350%;
+  }
+
+  .description {
+    width: 50%;
+  }
+
+  .timing {
+    padding-bottom: 4em;
+  }
+
+  .timing p {
+    text-align: left;
+    margin-bottom: 0;
+    padding-bottom: 12px;
+    margin-left: 1em;
   }
 }
