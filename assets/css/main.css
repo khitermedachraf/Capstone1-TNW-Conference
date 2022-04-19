@@ -242,4 +242,40 @@ a {
     padding-bottom: 12px;
     margin-left: 1em;
   }
+
+  #program ul {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .program-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 14%;
+    min-width: 145px;
+    font-size: xx-small;
+    height: 18em;
+    margin-left: 0.5%;
+  }
+
+  .program-item p,
+  .program-item h4 {
+    text-align: center !important;
+    width: 100% !important;
+    font-size: small !important;
+  }
+  .program-item p {
+    font-size: 98% !important;
+  }
+
+  #program ul img {
+    display: block;
+    width: 36px;
+    margin: auto;
+  }
+  
 }
