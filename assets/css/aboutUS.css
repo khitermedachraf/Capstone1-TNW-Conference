@@ -257,4 +257,15 @@ footer p {
     opacity: 0.7;
     cursor: pointer;
   }
+
+  footer {
+    background-color: var(--black);
+  }
+  footer p {
+    color: white;
+  }
+
+  footer img {
+    filter: brightness(0) invert(1);
+  }
 }
