@@ -210,4 +210,28 @@ footer p {
     color: white;
     background-color: var(--red);
   }
+
+  #about-TNW {
+    background-image: url("../../img/desktop-bg.png");
+    background-repeat: repeat-y;
+    background-size: cover;
+    height: max-content;
+    text-align: center;
+    padding-bottom: 3em;
+  }
+
+  .wrapper {
+    margin: auto;
+    width: 60%;
+  }
+  .wrapper h1{
+    padding: 0 1em;
+  }
+
+  #logo-section{
+    padding-top: 2em;
+    width: 70%;
+    margin: auto;
+  }
+
 }
