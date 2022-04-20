@@ -161,3 +161,53 @@ footer p {
   margin-bottom: 0px;
   color: var(--black);
 }
+
+.only-desktop {
+  display: none;
+}
+
+/* Add styles for the desktop version */
+
+@media only screen and (min-width: 768px) {
+  .only-mobile {
+    display: none;
+  }
+
+  .only-desktop {
+    display: block;
+  }
+
+  .index-header {
+    background-image: none;
+    height: max-content;
+  }
+
+  .dark-nav {
+    background-color: var(--black);
+  }
+
+  .dark-nav img {
+    width: 75%;
+  }
+
+  .white-nav ul li a:hover,
+  .white-nav ul li a:focus {
+    color: var(--red);
+  }
+
+  .white-nav img {
+    width: 8em;
+  }
+
+  .get-tickets-btn {
+    padding: 1em;
+    border: 5px solid var(--red);
+    color: var(--red);
+    background-color: inherit;
+  }
+  .get-tickets-btn:hover {
+    border-radius: 7px;
+    color: white;
+    background-color: var(--red);
+  }
+}

@@ -21,7 +21,71 @@
     <title>About US Page</title>
   </head>
   <body>
-    <header></header>
+    <header class="index-header">
+      <!-- The hamburger menu for the mobile version -->
+      <img
+        src="img/menu_black_48dp.svg"
+        alt="menu icon"
+        class="menuIcon only-mobile"
+      />
+      <!-- the dark navbar for desktop version -->
+      <nav class="dark-nav only-desktop">
+        <ul class="nav container justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link text-white px-0" href="#"
+              ><img src="img/facebook-fill.svg" alt="facebook icon"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white px-1" href="#"
+              ><img src="img/twitter-fill.svg" alt="twitter icon"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white-50" href="#">Logout</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white-50" href="#">MyPage</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white-50" href="#">Korean</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- the white navbar for desktop version -->
+      <nav class="white-nav shadow p-3 mb-3 bg-body rounded only-desktop">
+        <ul class="nav container justify-content-around align-items-center">
+          <li class="nav-item me-5">
+            <a class="nav-link" href="#"
+              ><img
+                src="img/TNW_Logo.png"
+                class="only-desktop me-5"
+                alt="TNW icon"
+            /></a>
+          </li>
+          <li class="nav-item ms-5">
+            <a class="nav-link secondary-color" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link secondary-color" href="#">Program</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link secondary-color" href="#">Join</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link secondary-color" href="#">Sponsor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link secondary-color" href="#">News</a>
+          </li>
+          <li class="nav-item ms-5">
+            <button type="button" class="get-tickets-btn">
+              Get tickets for TNW
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <section id="about-TNW">
         <img src="img/menu_black_48dp.svg" alt="menu icon" class="menuIcon" />
