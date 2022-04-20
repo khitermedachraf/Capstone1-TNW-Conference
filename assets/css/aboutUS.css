@@ -119,6 +119,10 @@ a {
   cursor: pointer;
 }
 
+.bg-blur:hover {
+  opacity: 0;
+}
+
 .partners {
   background-color: var(--black);
   filter: brightness(1.4);
@@ -143,7 +147,7 @@ a {
   filter: grayscale(100%) contrast(30%);
 }
 
-.partners-logos img:hover{
+.partners-logos img:hover {
   filter: grayscale(100%) contrast(60%);
 }
 

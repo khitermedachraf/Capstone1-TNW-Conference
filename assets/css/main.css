@@ -119,6 +119,11 @@ a {
   padding: 1em;
 }
 
+.program-item:hover{
+  cursor: pointer;
+  border: 1px solid white;
+}
+
 .attend-btn,
 .showMore-btn {
   letter-spacing: 0.03em;
