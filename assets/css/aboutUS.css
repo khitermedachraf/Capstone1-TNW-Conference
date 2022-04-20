@@ -224,14 +224,36 @@ footer p {
     margin: auto;
     width: 60%;
   }
-  .wrapper h1{
+  .wrapper h1 {
     padding: 0 1em;
   }
 
-  #logo-section{
+  #logo-section {
     padding-top: 2em;
     width: 70%;
     margin: auto;
   }
+  .conferences-list {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+  }
 
+  .conferences-list img {
+    width: 400px;
+    height: 225px;
+    margin-top: 1em;
+  }
+
+  .bg-blur {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--red);
+    width: 400px;
+    height: 220px;
+    opacity: 0.7;
+    cursor: pointer;
+  }
 }
