@@ -14,14 +14,25 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
     <title>TNW conference</title>
   </head>
-  <body>
+  <body id="body">
     <header class="index-header">
       <!-- The hamburger menu for the mobile version -->
       <img
         src="img/menu_black_48dp.svg"
         alt="menu icon"
         class="menuIcon only-mobile"
+        id="menu-btn"
       />
+      <!-- Implementing the Mobile Menu -->
+      <div id="mobile-menu" class="only-mobile hidden">
+        <div class="pb-5"><a href="#" class="close" id="close-btn"></a></div>
+        <ul class="d-block pt-5">
+          <li><a href="./aboutUs.html" class="menu-link">About</a></li>
+          <li><a href="#program" class="menu-link">Program</a></li>
+          <li><a href="#joinUs" class="menu-link">Join</a></li>
+          <li><a href="#" class="menu-link">News</a></li>
+        </ul>
+      </div>
       <!-- the dark navbar for desktop version -->
       <nav class="dark-nav only-desktop">
         <ul class="nav container justify-content-end">
@@ -99,7 +110,10 @@
         <h1 class="mx-4 mt-3 display-5 introH1">
           The Europe's leading tech festival!, TNW conference, NOW.
         </h1>
-        <div class="card m-3 mb-4 border-3 border-white bg-light description">
+        <div
+          class="card m-3 mb-4 border-3 border-white bg-light description"
+          id="intro-card"
+        >
           <div class="card-body text-black-50">
             Learn what's next in tech, now — live in Amsterdam on June 16 & 17.
             Join us at TNW Conference 2022 to meet international tech
@@ -329,6 +343,7 @@
         </p>
       </div>
     </footer>
+    <script src="./assets/main.js"></script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
