@@ -1,6 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# **_Capstone-TNW-Conference_** project
+# TNW CONFERENCE 2022
+![AsiaWebConf-Logo](https://wpranks.com/wp-content/uploads/2016/01/tnw-website-review.jpg)
+
+## *Microverse First Capstone Project*
 
 > Description: This is my final project for HTML & CSS MODULE from the microverse curriculum.
 > 
@@ -8,7 +11,22 @@
 
 ## :red_circle: Live Demo
 
-[Live Preview Link](https://github.com/khitermedachraf/Capstone-TNW-Conference)
+[Live Preview Link](https://khitermedachraf.github.io/Capstone1-TNW-Conference/)
+
+## Project Documentation
+- Here is the [loom video link](https://www.loom.com/share/55f95314ade34700afcdbecec5137d7d).
+
+## Screenshots 📸
+Mobile and desktop version screenshots can be found in the repository.
+
+## Requirements
+
+Build a website for an event by following a [design from behance](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015), using:
+
+- HTML5 and CSS3 (or a CSS framework) along with best practices.
+- CSS3 media queries for the desktop version.
+- JavaScript.
+- Linters (Lighthouse, Webhint, Stylelint, Eslint).
 
 ## :hammer: Built With
 
@@ -57,9 +75,13 @@ _N.B: Make sure that you have node installed in your commputer, if not [Download
 
 👤 **Achraf KHITER**
 
-- LinkedIn: [khitermed](https://www.linkedin.com/in/khitermed/)
-- GitHub: [@khitermedachraf](https://github.com/khitermedachraf)
-- Twitter: [@@AchrafKhiter](https://twitter.com/AchrafKhiter)
+- GitHub: [![GitHub Badge](https://img.shields.io/badge/-khitermedachraf-white?logo=GitHub&logoColor=181717&style=plastic)](https://github.com/khitermedachraf/)
+- LinkedIn: [![LinkedIn Badge](https://img.shields.io/badge/-khitermed-white?logo=LinkedIn&logoColor=0A66C2&style=plastic)](https://www.linkedin.com/in/khitermed/)
+- Gmail: [![Gmail Badge](https://img.shields.io/badge/-@khiter.med7@gmail.com-white?logo=Gmail&logoColor=EA4335&style=plastic)](mailto:@khiter.med7@gmail.com)
+- Twitter: [![Twitter Badge](https://img.shields.io/badge/-@AchrafKhiter-white?logo=Twitter&logoColor=1DA1F2&style=plastic)](https://twitter.com/AchrafKhiter)
+- Instagram: [![Instagram Badge](https://img.shields.io/badge/-@khitermed-white?logo=Instagram&logoColor=bc2a8d&style=plastic)](https://www.instagram.com/khitermed07/)
+- Facebook: [![Facebook Badge](https://img.shields.io/badge/-Achraf--KHITER-white?logo=Facebook&logoColor=1877F2&style=plastic)](https://www.facebook.com/achraf.khiter.750/)
+
 
 ## 🤝 Contributing 
 
