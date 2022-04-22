@@ -46,54 +46,58 @@ const speackersArray = [
     description: 'Sandra is a proponent for "human-centric tech". From investment banking to blockchain technology, she is an early investor of crypto and digital assets.',
   },
   {
-    image: '../../img/speackers/Mars-Gueze.jpg',
+    image: '../../img/speackers/Mars-Geuze.jpg',
     name: 'Mars Geuze',
     occupation: 'Co-Founder, Hardt Hyperloop,',
     description: 'Mars Geuze is Chief Commercial Officer at Hardt Hyperloop, the European hyperloop technology provider. Within Hardt, Mars is responsible for all market development activities,',
   },
   {
-    image: 'img/speackers/Devlukia.jpg',
+    image: '../../img/speackers/Devlukia.jpg',
     name: 'Nilixa Devlukia',
     occupation: 'Founder, CEO, Payments Solved',
     description: 'TNilixa is the CEO and founder of Payments Solved a regulatory consultancy advising on the regulatory framework for open banking, digital assets and payments.',
   },
   {
-    image: 'img/speackers/Kit.jpg',
+    image: '../../img/speackers/Kit.jpg',
     name: 'Kit Colbert',
     occupation: 'Chief Technology Officer, VMWare',
     description: 'As CTO for VMware, Kit Colbert shapes the technical vision for the company, and the transformation to a cloud and subscription-centric R and D organization.',
   },
   {
-    image: 'img/speackers/Radhika.jpg',
+    image: '../../img/speackers/Radhika.png',
     name: 'Radhika Krishnan',
     occupation: 'Chief Product Officer, Hitachi Vantara',
     description: 'As Chief Product Officer, Radhika Krishnan leads product development, product management, and product marketing functions for Hitachi Vantara',
   },
 ];
 
-// // Render the projects cards dynamically
-// const projectsCards = document.getElementById('projects-card');
+// // Render the speackers cards dynamically
+const speackersList = document.getElementById('speackers-list');
 
-// function displayProject(projectId) {
-//   projectsCards.innerHTML += `
-//     <div class="project-placeholder">
-//     <img src="${projectsData[projectId].image}" alt="my ${projectId} project image" />
-//     <div class="properties">
-//       <h3 class="project-title .dark-blue">
-//         ${projectsData[projectId].title}
-//       </h3>
-//       <ul class="flex-div tags">
-//         <li><a href="#">${projectsData[projectId].technologies[0]}</a></li>
-//         <li><a href="#">${projectsData[projectId].technologies[1]}</a></li>
-//         <li><a href="#">${projectsData[projectId].technologies[2]}</a></li>
-//         <li><a href="#">${projectsData[projectId].technologies[3]}</a></li>
-//       </ul>
-//       <button type="button" class="see-demo-btn">See Project</button>
-//     </div>
-//     </div>
-//   `;
-// }
+function displaySpeacker(speackerId) {
+  speackersList.innerHTML += `
+  <li>
+  <div class="card d-flex flex-row">
+    <img
+      class="speacker-img align-self-start"
+      src="${speackersArray[speackerId].image}"
+      alt="${speackersArray[speackerId].name} image"
+    />
+    <div class="card-body">
+      <h4 class="card-title">${speackersArray[speackerId].name}</h4>
+      <p class="card-text primary-color">
+      ${speackersArray[speackerId].occupation}
+      </p>
+      <div class="short-grey-line"></div>
+      <p class="card-text secondary-color">
+      ${speackersArray[speackerId].description}
+      </p>
+    </div>
+  </div>
+</li>
+  `;
+}
 
-// for (let i = 0; i < projectsData.length; i++) {
-//   displayProject(i);
-// }
+for (let i = 0; i < speackersArray.length; i++) {
+  displaySpeacker(i);
+}
