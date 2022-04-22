@@ -1,4 +1,5 @@
 // the user clicks (or taps) the hamburger button, the mobile menu appears.
+//  The index page
 const menuBtn = document.getElementById('menu-btn');
 
 const mobileMenu = document.getElementById('mobile-menu');

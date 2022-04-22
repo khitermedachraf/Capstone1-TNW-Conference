@@ -247,6 +247,10 @@ a {
   background-color: var(--grey);
 }
 
+.menuIcon:hover {
+  cursor: pointer;
+}
+
 /* Add styles for the desktop version */
 
 @media only screen and (min-width: 768px) {
