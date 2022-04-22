@@ -10,6 +10,12 @@
 
 [Live Preview Link](https://github.com/khitermedachraf/Capstone-TNW-Conference)
 
+## Project Documentation
+- Here is the loom video [link](https://www.loom.com/share/55f95314ade34700afcdbecec5137d7d).
+
+## Screenshots 📸
+Mobile and desktop version screenshots can be found in the repository.
+
 ## Requirements
 
 Build a website for an event by following a [design from behance](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015), using:
