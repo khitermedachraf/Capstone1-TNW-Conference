@@ -11,7 +11,7 @@
 
 ## :red_circle: Live Demo
 
-[Live Preview Link](https://github.com/khitermedachraf/Capstone-TNW-Conference)
+[Live Preview Link](https://khitermedachraf.github.io/Capstone1-TNW-Conference/)
 
 ## Project Documentation
 - Here is the loom video [link](https://www.loom.com/share/55f95314ade34700afcdbecec5137d7d).
