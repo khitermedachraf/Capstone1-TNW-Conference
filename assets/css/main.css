@@ -1,11 +1,10 @@
 /* Import the specific font family we are going to use */
 @import url("http://fonts.cdnfonts.com/css/cocogoose?styles=44178");
-@import url("http://fonts.cdnfonts.com/css/lato");
 
 *,
 *::before,
 *::after {
-  font-family: "COCOGOOSE", "Lato";
+  font-family: COCOGOOSE, sans-serif;
   font-weight: lighter;
   font-size: small;
   padding: 0;
@@ -53,9 +52,13 @@ body {
   height: 100px;
 }
 
-.menuIcon {
+.menu-icon {
   width: 4em;
   margin: 1em 2em;
+
+  /* Fix the menu icon to the top */
+  position: fixed !important;
+  z-index: 1;
 }
 
 .w-150 {
@@ -70,14 +73,18 @@ body {
   height: 410px;
 }
 
-.introH1 {
-  background-image: url(../../img/orange.jpeg);
+.intro-h1 {
+  background-image: url("../../img/orange.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-clip: text;
+  background-clip: content-box;
   -webkit-background-clip: text;
   color: transparent;
-  width: 95%;
+}
+
+footer p {
+  margin-bottom: 0;
+  color: var(--black);
 }
 
 .timing > p:first-child {
@@ -87,7 +94,7 @@ body {
 }
 
 #program {
-  background-image: url(../../img/fill-bg.png);
+  background-image: url("../../img/fill-bg.png");
   background-color: var(--black);
   display: flex;
   flex-direction: column;
@@ -129,7 +136,7 @@ a {
 }
 
 .attend-btn,
-.showMore-btn {
+.show-more-btn {
   letter-spacing: 0.03em;
   padding: 1.5rem;
   cursor: pointer;
@@ -155,17 +162,19 @@ a {
   height: 0.25rem;
   background-color: var(--grey);
 }
+
 .speackers-list > li {
   margin: 1em;
 }
 
-.showMore-btn {
+.show-more-btn {
   border: 1px solid var(--black);
   background-color: whitesmoke;
   width: 100%;
   min-width: 450px;
 }
-.showMore-btn:hover {
+
+.show-more-btn:hover {
   background-color: var(--red);
   color: white;
   opacity: 1;
@@ -173,12 +182,6 @@ a {
 
 .only-desktop {
   display: none !important;
-}
-
-/* Fix the menu icon to the top */
-.menuIcon {
-  position: fixed !important;
-  z-index: 1;
 }
 
 .hidden {
@@ -193,13 +196,15 @@ a {
   width: 32px;
   height: 32px;
   opacity: 0.3;
+  background-color: var(--grey);
 }
+
 .close:hover {
   opacity: 1;
 }
 
-.close:before,
-.close:after {
+.close::before,
+.close::after {
   position: absolute;
   left: 15px;
   content: " ";
@@ -208,13 +213,14 @@ a {
   background-color: #333;
 }
 
-.close:before {
+.close::before {
   transform: rotate(45deg);
 }
 
-.close:after {
+.close::after {
   transform: rotate(-45deg);
 }
+
 #mobile-menu {
   width: 100vw;
   height: 100vh;
@@ -238,16 +244,13 @@ a {
   background-color: white;
   opacity: 0.7;
 }
+
 .menu-link:hover,
 .menu-link:focus {
   color: var(--red);
 }
 
-.close {
-  background-color: var(--grey);
-}
-
-.menuIcon:hover {
+.menu-icon:hover {
   cursor: pointer;
 }
 
@@ -271,6 +274,11 @@ a {
     background-color: var(--black);
   }
 
+  footer img {
+    filter: grayscale(150%) contrast(150%);
+    max-width: 175px;
+  }
+
   .dark-nav img {
     width: 75%;
   }
@@ -290,6 +298,7 @@ a {
     color: var(--red);
     background-color: inherit;
   }
+
   .get-tickets-btn:hover {
     border-radius: 7px;
     color: white;
@@ -309,7 +318,7 @@ a {
     font-size: 125%;
   }
 
-  .introH1 {
+  .intro-h1 {
     max-width: 70%;
     font-size: 350%;
   }
@@ -354,8 +363,21 @@ a {
     width: 100% !important;
     font-size: small !important;
   }
+
   .program-item p {
     font-size: 98% !important;
+  }
+
+  .partners-logos img {
+    display: block;
+    width: 30%;
+    max-width: 125px;
+    filter: grayscale(100%) contrast(30%);
+  }
+
+  .partners-logos img:hover {
+    filter: grayscale(100%) contrast(60%);
+    cursor: pointer;
   }
 
   #program ul img {
@@ -366,9 +388,8 @@ a {
 
   .speackers-list {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: center;
-    flex-wrap: wrap;
   }
 
   .speackers-list li {
@@ -387,31 +408,9 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0 0 0;
+    margin: 1rem 0 0;
     gap: 1rem;
     width: 90%;
     flex-wrap: wrap;
-  }
-
-  .partners-logos img {
-    display: block;
-    width: 30%;
-    max-width: 125px;
-    filter: grayscale(100%) contrast(30%);
-  }
-
-  .partners-logos img:hover {
-    filter: grayscale(100%) contrast(60%);
-    cursor: pointer;
-  }
-
-  footer img {
-    filter: grayscale(150%) contrast(150%);
-    max-width: 175px;
-  }
-
-  footer p {
-    margin-bottom: 0px;
-    color: var(--black);
   }
 }

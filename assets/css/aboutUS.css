@@ -1,11 +1,10 @@
 /* Import the specific font family we are going to use */
 @import url("http://fonts.cdnfonts.com/css/cocogoose?styles=44178");
-@import url("http://fonts.cdnfonts.com/css/lato");
 
 *,
 *::before,
 *::after {
-  font-family: "COCOGOOSE", "Lato";
+  font-family: COCOGOOSE, sans-serif;
   font-weight: lighter;
   font-size: small;
   padding: 0;
@@ -35,18 +34,17 @@ a {
   color: inherit;
 }
 
-.menuIcon {
+.menu-icon {
   width: 4em;
   margin: 1em 2em;
-}
 
-.menuIcon:hover {
-  cursor: pointer;
-}
-/* Fix the menu icon to the top */
-.menuIcon {
+  /* Fix the menu icon to the top */
   position: fixed !important;
   z-index: 2;
+}
+
+.menu-icon:hover {
+  cursor: pointer;
 }
 
 .short-line {
@@ -77,7 +75,7 @@ a {
 
 /* Styling the aboutUS.html page */
 
-#about-TNW {
+#about-tnw {
   background-image: url("../../img/mobile_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -95,10 +93,22 @@ a {
   cursor: pointer;
 }
 
+footer img {
+  filter: grayscale(150%) contrast(150%);
+  max-width: 175px;
+}
+
 .conferences-list img {
   width: 85%;
   height: 225px;
   margin-top: 2em;
+}
+
+.partners-logos img {
+  display: block;
+  width: 30%;
+  max-width: 125px;
+  filter: grayscale(100%) contrast(30%);
 }
 
 .conferences-list img:hover {
@@ -147,17 +157,10 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1rem 0 0 0;
+  margin: 1rem 0 0;
   gap: 1rem;
   width: 90%;
   flex-wrap: wrap;
-}
-
-.partners-logos img {
-  display: block;
-  width: 30%;
-  max-width: 125px;
-  filter: grayscale(100%) contrast(30%);
 }
 
 .partners-logos img:hover {
@@ -165,13 +168,8 @@ a {
   cursor: pointer;
 }
 
-footer img {
-  filter: grayscale(150%) contrast(150%);
-  max-width: 175px;
-}
-
 footer p {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   color: var(--black);
 }
 
@@ -196,13 +194,15 @@ footer p {
   width: 32px;
   height: 32px;
   opacity: 0.3;
+  background-color: var(--grey);
 }
+
 .close:hover {
   opacity: 1;
 }
 
-.close:before,
-.close:after {
+.close::before,
+.close::after {
   position: absolute;
   left: 15px;
   content: " ";
@@ -211,13 +211,14 @@ footer p {
   background-color: #333;
 }
 
-.close:before {
+.close::before {
   transform: rotate(45deg);
 }
 
-.close:after {
+.close::after {
   transform: rotate(-45deg);
 }
+
 #mobile-menu {
   width: 100vw;
   height: 100vh;
@@ -241,13 +242,10 @@ footer p {
   background-color: white;
   opacity: 0.7;
 }
+
 .menu-link:hover,
 .menu-link:focus {
   color: var(--red);
-}
-
-.close {
-  background-color: var(--grey);
 }
 
 /* Add styles for the desktop version */
@@ -270,6 +268,10 @@ footer p {
     background-color: var(--black);
   }
 
+  footer img {
+    filter: brightness(0) invert(1);
+  }
+
   .dark-nav img {
     width: 75%;
   }
@@ -289,13 +291,14 @@ footer p {
     color: var(--red);
     background-color: inherit;
   }
+
   .get-tickets-btn:hover {
     border-radius: 7px;
     color: white;
     background-color: var(--red);
   }
 
-  #about-TNW {
+  #about-tnw {
     background-image: url("../../img/desktop-bg.png");
     background-repeat: repeat-y;
     background-size: cover;
@@ -309,6 +312,7 @@ footer p {
     margin: auto;
     width: 60%;
   }
+
   .wrapper h1 {
     padding: 0.5em 1em;
   }
@@ -318,6 +322,7 @@ footer p {
     width: 70%;
     margin: auto;
   }
+
   .conferences-list {
     display: flex;
     justify-content: center;
@@ -346,11 +351,8 @@ footer p {
   footer {
     background-color: var(--black);
   }
+
   footer p {
     color: white;
-  }
-
-  footer img {
-    filter: brightness(0) invert(1);
   }
 }
