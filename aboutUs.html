@@ -22,23 +22,6 @@
   </head>
   <body id="body">
     <header class="index-header only-desktop">
-      <!-- The hamburger menu for the mobile version -->
-      <img
-        src="img/menu_black_48dp.svg"
-        alt="menu icon"
-        class="menuIcon only-mobile"
-        id="menu-btn"
-      />
-      <!-- Implementing the Mobile Menu -->
-      <div id="mobile-menu" class="only-mobile hidden">
-        <div class="pb-5"><a href="#" class="close" id="close-btn"></a></div>
-        <ul class="d-block pt-5">
-          <li><a href="./aboutUs.html" class="menu-link">About</a></li>
-          <li><a href="#program" class="menu-link">Program</a></li>
-          <li><a href="#joinUs" class="menu-link">Join</a></li>
-          <li><a href="#" class="menu-link">News</a></li>
-        </ul>
-      </div>
       <!-- the dark navbar for desktop version -->
       <nav class="dark-nav only-desktop">
         <ul class="nav container justify-content-end">
@@ -110,19 +93,37 @@
     </header>
     <main>
       <section id="about-TNW">
+        <img
+          src="img/menu_black_48dp.svg"
+          alt="menu icon"
+          class="menuIcon only-mobile"
+          id="menu-btn"
+        />
+        <!-- Implementing the Mobile Menu -->
+        <div id="mobile-menu" class="only-mobile hidden">
+          <div class="pb-5"><a href="#" class="close" id="close-btn"></a></div>
+          <ul class="d-block pt-5">
+            <li><a href="./aboutUs.html" class="menu-link">About</a></li>
+            <li><a href="#logo-section" class="menu-link">Our Logo</a></li>
+            <li>
+              <a href="#previous-conference" class="menu-link"
+                >Latest Conference</a
+              >
+            </li>
+            <li><a href="#partners" class="menu-link">Sponsor</a></li>
+          </ul>
+        </div>
         <div class="wrapper">
-          <img
-            src="img/menu_black_48dp.svg"
-            alt="menu icon"
-            class="menuIcon only-mobile"
-          />
           <p class="mx-4 primary-color h6 pt-1 text-center only-mobile">
             "Get insights from industry pioneers"
           </p>
           <h1 class="mx-4 mt-2 display-5 primary-color text-center">
             The Europe's leading tech festival!, TNW conference, NOW.
           </h1>
-          <div class="card m-4 mt-2 border-3 border-white bg-light">
+          <div
+            class="card m-4 mt-2 border-3 border-white bg-light"
+            id="intro-card"
+          >
             <div class="card-body text-black-50">
               TNW Conference is a 2-day technology event in the greater
               Amsterdam area, where industry leaders and tech enthusiasts alike
