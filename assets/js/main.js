@@ -79,7 +79,7 @@ function displaySpeacker(speackerId) {
   <li>
   <div class="card d-flex flex-row">
     <img
-      class="speacker-img align-self-start"
+      class="speacker-img align-self-center"
       src="${speackersArray[speackerId].image}"
       alt="${speackersArray[speackerId].name} image"
     />
