@@ -1,0 +1,355 @@
+/* Import the specific font family we are going to use */
+@import url("http://fonts.cdnfonts.com/css/cocogoose?styles=44178");
+
+*,
+*::before,
+*::after {
+  font-family: COCOGOOSE, sans-serif;
+  font-weight: lighter;
+  font-size: small;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+ul,
+li,
+a {
+  padding-left: 0;
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-icon {
+  width: 4em;
+  margin: 1em 2em;
+}
+
+.menu-icon:hover {
+  cursor: pointer;
+}
+
+.short-line {
+  width: 5.5rem;
+  margin: 0.75rem 0;
+  height: 0.15rem;
+  background-color: var(--red);
+}
+
+/* Define global CSS variables */
+:root {
+  --red: #ec5242;
+  --black: #272a31;
+  --grey: #d3d3d3;
+}
+
+.primary-color {
+  color: var(--red);
+}
+
+.secondary-color {
+  color: var(--black);
+}
+
+.third-color {
+  color: var(--grey);
+}
+
+/* Styling the about.html page */
+
+#about-tnw {
+  background-image: url("../../img/mobile_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 475px;
+}
+
+.logo {
+  max-width: 400px;
+  width: 100%;
+  border: 1px solid var(--grey);
+  border-radius: 4px;
+}
+
+.logo:hover {
+  border: 2px solid var(--grey);
+  cursor: pointer;
+}
+
+footer img {
+  filter: grayscale(150%) contrast(150%);
+  max-width: 135px;
+}
+
+.conferences-list img {
+  width: 85%;
+  height: 225px;
+  margin-top: 2em;
+}
+
+.partners-logos img {
+  display: block;
+  width: 30%;
+  max-width: 125px;
+  filter: grayscale(100%) contrast(30%);
+}
+
+.conferences-list img:hover {
+  cursor: pointer;
+}
+
+.conferences-list li {
+  position: relative;
+  text-align: center;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.bg-blur {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--red);
+  width: 85%;
+  height: 220px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.bg-blur:hover {
+  opacity: 0;
+}
+
+.partners {
+  background-color: var(--black);
+  filter: brightness(1.4);
+  color: white;
+  padding: 1em;
+}
+
+.partners-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 0;
+  gap: 1rem;
+  width: 90%;
+  flex-wrap: wrap;
+}
+
+.partners-logos img:hover {
+  filter: grayscale(100%) contrast(60%);
+  cursor: pointer;
+}
+
+footer p {
+  margin-bottom: 0;
+  color: var(--black);
+}
+
+.only-desktop {
+  display: none !important;
+}
+
+.wrapper {
+  padding-top: 5em;
+}
+
+/* Add styles for the mobile menu */
+.hidden {
+  display: none;
+}
+
+/* Add style to the close btn */
+.close {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+  background-color: var(--grey);
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+.close::before,
+.close::after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+
+.close::before {
+  transform: rotate(45deg);
+}
+
+.close::after {
+  transform: rotate(-45deg);
+}
+
+#mobile-menu {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--red);
+  opacity: 0.97;
+}
+
+.menu-link {
+  display: block;
+  padding: 1em;
+  color: var(--grey);
+  font-size: x-large;
+}
+
+#mobile-menu ul li {
+  width: 100%;
+  text-align: center;
+}
+
+#mobile-menu ul li:hover {
+  background-color: white;
+  opacity: 0.7;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--red);
+}
+
+/* Add styles for the desktop version */
+
+@media only screen and (min-width: 768px) {
+  .only-mobile {
+    display: none !important;
+  }
+
+  .only-desktop {
+    display: block !important;
+  }
+
+  .index-header {
+    background-image: none;
+    height: max-content;
+  }
+
+  .dark-nav {
+    background-color: var(--black);
+  }
+
+  footer img {
+    filter: brightness(0) invert(1);
+  }
+
+  .dark-nav img {
+    width: 75%;
+  }
+
+  .white-nav ul li a:hover,
+  .white-nav ul li a:focus {
+    color: var(--red);
+  }
+
+  .white-nav img {
+    width: 8em;
+  }
+
+  .get-tickets-btn {
+    padding: 1em;
+    border: 5px solid var(--red);
+    color: var(--red);
+    background-color: inherit;
+  }
+
+  .get-tickets-btn:hover {
+    border-radius: 7px;
+    color: white;
+    background-color: var(--red);
+  }
+
+  #about-tnw {
+    background-image: url("../../img/desktop-bg.png");
+    background-repeat: repeat-y;
+    background-size: cover;
+    height: max-content;
+    text-align: center;
+    padding-bottom: 3em;
+  }
+
+  .wrapper {
+    padding-top: 0;
+    margin: auto;
+    width: 60%;
+  }
+
+  .wrapper h1 {
+    padding: 0.5em 1em;
+  }
+
+  #logo-section {
+    padding-top: 2em;
+    width: 70%;
+    margin: auto;
+  }
+
+  .conferences-list {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+  }
+
+  .conferences-list img {
+    max-width: 400px;
+    width: auto;
+    height: 225px;
+    margin-top: 1em;
+  }
+
+  .bg-blur {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--red);
+    width: 400px;
+    height: 220px;
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  footer {
+    background-color: var(--black);
+  }
+
+  footer p {
+    color: white;
+  }
+}

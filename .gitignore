@@ -102,3 +102,10 @@ dist
 
 # TernJS port file
 .tern-port
+
+# ignore npm nodes files
+node_modules/
+
+# ignore .vscode files
+.vscode
+

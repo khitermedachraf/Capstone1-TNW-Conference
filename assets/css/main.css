@@ -1,0 +1,412 @@
+/* Import the specific font family we are going to use */
+@import url("http://fonts.cdnfonts.com/css/cocogoose?styles=44178");
+
+*,
+*::before,
+*::after {
+  font-family: COCOGOOSE, sans-serif;
+  font-weight: lighter;
+  font-size: small;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Define global CSS variables */
+:root {
+  --red: #ec5242;
+  --black: #272a31;
+  --grey: #d3d3d3;
+}
+
+.primary-color {
+  color: var(--red);
+}
+
+.secondary-color {
+  color: var(--black);
+}
+
+.third-color {
+  color: var(--grey);
+}
+
+/* Styling the Index.html page */
+.index-header {
+  background-image: url("../../img/mobile_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+}
+
+.menu-icon {
+  width: 4em;
+  margin: 1em 2em;
+}
+
+.w-150 {
+  width: 150%;
+}
+
+.intro {
+  background-image: url("../../img/mobile_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -200px;
+  height: 410px;
+}
+
+.intro-h1 {
+  background-image: url("../../img/orange.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+footer p {
+  margin-bottom: 0;
+  color: var(--black);
+}
+
+.timing > p:first-child {
+  font-weight: 950;
+  font-size: larger;
+  color: #484b51;
+}
+
+#program {
+  background-image: url("../../img/fill-bg.png");
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+}
+
+ul,
+li,
+a {
+  padding-left: 0;
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.short-line {
+  width: 5.5rem;
+  margin: 0.75rem 0;
+  height: 0.15rem;
+  background-color: var(--red);
+}
+
+.program-item {
+  display: flex;
+  width: 80%;
+  min-width: 385px;
+  align-self: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+.program-item:hover {
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+.attend-btn,
+.show-more-btn {
+  letter-spacing: 0.03em;
+  padding: 1.5rem;
+  cursor: pointer;
+  background-color: var(--red);
+  border-radius: 5px;
+  border: none;
+  opacity: 0.85;
+}
+
+.attend-btn:hover {
+  opacity: 1;
+}
+
+.speacker-img {
+  width: 10em;
+  height: 11em;
+  margin: 1em;
+}
+
+.short-grey-line {
+  width: 2.5rem;
+  margin: 0.75rem 0;
+  height: 0.25rem;
+  background-color: var(--grey);
+}
+
+.speackers-list > li {
+  margin: 1em;
+}
+
+.show-more-btn {
+  border: 1px solid var(--black);
+  background-color: whitesmoke;
+  width: 100%;
+  min-width: 450px;
+}
+
+.show-more-btn:hover {
+  background-color: var(--red);
+  color: white;
+  opacity: 1;
+}
+
+.only-desktop {
+  display: none !important;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Add style to the close btn */
+.close {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+  background-color: var(--grey);
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+.close::before,
+.close::after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+
+.close::before {
+  transform: rotate(45deg);
+}
+
+.close::after {
+  transform: rotate(-45deg);
+}
+
+#mobile-menu {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--red);
+  opacity: 0.97;
+}
+
+.menu-link {
+  display: block;
+  padding: 1em;
+  color: var(--grey);
+  font-size: x-large;
+}
+
+#mobile-menu ul li {
+  width: 100%;
+  text-align: center;
+}
+
+#mobile-menu ul li:hover {
+  background-color: white;
+  opacity: 0.7;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--red);
+}
+
+.menu-icon:hover {
+  cursor: pointer;
+}
+
+/* Add styles for the desktop version */
+
+@media only screen and (min-width: 768px) {
+  .only-mobile {
+    display: none !important;
+  }
+
+  .only-desktop {
+    display: block !important;
+  }
+
+  .index-header {
+    background-image: none;
+    height: max-content;
+  }
+
+  .dark-nav {
+    background-color: var(--black);
+  }
+
+  footer img {
+    filter: grayscale(150%) contrast(150%);
+    max-width: 175px;
+  }
+
+  .dark-nav img {
+    width: 75%;
+  }
+
+  .white-nav ul li a:hover,
+  .white-nav ul li a:focus {
+    color: var(--red);
+  }
+
+  .white-nav img {
+    width: 8em;
+  }
+
+  .get-tickets-btn {
+    padding: 1em;
+    border: 5px solid var(--red);
+    color: var(--red);
+    background-color: inherit;
+  }
+
+  .get-tickets-btn:hover {
+    border-radius: 7px;
+    color: white;
+    background-color: var(--red);
+  }
+
+  .intro {
+    background-image: url("../../img/desktop-bg.png");
+    background-repeat: repeat-y;
+    background-size: cover;
+    height: max-content;
+    padding-left: 12%;
+    padding-top: 4em;
+  }
+
+  .intro p {
+    font-size: 125%;
+  }
+
+  .intro-h1 {
+    max-width: 70%;
+    font-size: 350%;
+  }
+
+  .description {
+    width: 50%;
+  }
+
+  .timing {
+    padding-bottom: 4em;
+  }
+
+  .timing p {
+    text-align: left;
+    margin-bottom: 0;
+    padding-bottom: 12px;
+    margin-left: 1em;
+  }
+
+  #program ul {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .program-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 14%;
+    min-width: 145px;
+    font-size: xx-small;
+    height: 18em;
+    margin-left: 0.5%;
+  }
+
+  .program-item p,
+  .program-item h4 {
+    text-align: center !important;
+    width: 100% !important;
+    font-size: small !important;
+  }
+
+  .program-item p {
+    font-size: 98% !important;
+  }
+
+  .partners-logos img {
+    display: block;
+    width: 30%;
+    max-width: 125px;
+    filter: grayscale(100%) contrast(30%);
+  }
+
+  .partners-logos img:hover {
+    filter: grayscale(100%) contrast(60%);
+    cursor: pointer;
+  }
+
+  #program ul img {
+    display: block;
+    width: 36px;
+    margin: auto;
+  }
+
+  .speackers-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .speackers-list li {
+    display: inline-block;
+    width: 40%;
+  }
+
+  .partners {
+    background-color: var(--black);
+    filter: brightness(1.4);
+    color: white;
+    padding: 1em;
+  }
+
+  .partners-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 0;
+    gap: 1rem;
+    width: 90%;
+    flex-wrap: wrap;
+  }
+}

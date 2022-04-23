@@ -14,7 +14,8 @@
 [Live Preview Link](https://khitermedachraf.github.io/Capstone1-TNW-Conference/)
 
 ## Project Documentation
-- Here is the [loom video link](https://www.loom.com/share/55f95314ade34700afcdbecec5137d7d).
+
+- Here is the loom video [link 1](https://www.loom.com/share/ab6c7f84d99a447081d753242ccf4ca3), [link 2](https://www.loom.com/share/9e429524c9c341bd90c1797909d0f234).
 
 ## Screenshots 📸
 Mobile and desktop version screenshots can be found in the repository.

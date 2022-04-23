@@ -4,7 +4,269 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
     <title>TNW conference</title>
   </head>
-  <body></body>
+  <body id="body">
+    <header class="index-header">
+      <!-- The hamburger menu for the mobile version -->
+      <img
+        src="img/menu_black_48dp.svg"
+        alt="menu icon"
+        class="menu-icon only-mobile"
+        id="menu-btn"
+      />
+      <!-- Implementing the Mobile Menu -->
+      <div id="mobile-menu" class="only-mobile hidden">
+        <div class="pb-5"><a href="#" class="close" id="close-btn"></a></div>
+        <ul class="d-block pt-5">
+          <li><a href="./about.html" class="menu-link">About</a></li>
+          <li><a href="#program" class="menu-link">Program</a></li>
+          <li><a href="#joinUs" class="menu-link">Join</a></li>
+          <li><a href="#" class="menu-link">News</a></li>
+        </ul>
+      </div>
+      <!-- the dark navbar for desktop version -->
+      <nav class="dark-nav only-desktop">
+        <ul class="nav container justify-content-end">
+          <li class="nav-item">
+            <a
+              class="nav-link text-white px-0"
+              href="https://www.facebook.com/achraf.khiter.750/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="img/facebook-fill.svg" alt="facebook icon"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-white px-1"
+              href="https://twitter.com/AchrafKhiter"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="img/twitter-fill.svg" alt="twitter icon"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white-50" href="#">Logout</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-white-50"
+              href="https://www.linkedin.com/in/khitermed/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >MyPage</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white-50" href="#">Korean</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- the white navbar for desktop version -->
+      <nav class="white-nav shadow p-3 mb-3 bg-body rounded only-desktop">
+        <ul class="nav container justify-content-around align-items-center">
+          <li class="nav-item me-5">
+            <a class="nav-link" href="./index.html"
+              ><img
+                src="img/TNW_Logo.png"
+                class="only-desktop me-5"
+                alt="TNW icon"
+            /></a>
+          </li>
+          <li class="nav-item ms-5">
+            <a class="nav-link secondary-color" href="./about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link secondary-color" href="#program">Program</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link secondary-color" href="#joinUs">Join</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link secondary-color" href="#partners">Sponsor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link secondary-color" href="#">News</a>
+          </li>
+          <li class="nav-item ms-5">
+            <button type="button" class="get-tickets-btn">
+              Get tickets for TNW
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="TNW-2022-news" class="intro">
+        <p class="mx-4 primary-color h6 pt-2">
+          "Get insights from industry pioneers"
+        </p>
+        <h1 class="mx-4 mt-3 display-5 intro-h1">
+          The Europe's leading tech festival!, TNW conference, NOW.
+        </h1>
+        <div
+          class="card m-3 mb-4 border-3 border-white bg-light description"
+          id="intro-card"
+        >
+          <div class="card-body text-black-50">
+            Learn what's next in tech, now — live in Amsterdam on June 16 & 17.
+            Join us at TNW Conference 2022 to meet international tech
+            executives, policymakers, startups, scale-ups, and general tech
+            enthusiasts.
+          </div>
+        </div>
+        <div class="text-center timing text-secondary">
+          <p class="text-nowrap">2022.16.06(Thursday) ~ 17 (Friday)</p>
+          <p>
+            <img src="img/location_on_black_24dp.svg" alt="location_on icon" />
+            At Taets Art and Event Park in Amsterdam.
+          </p>
+        </div>
+      </section>
+      <section id="program" class="text-white p-2 pt-4">
+        <h2 class="text-center mt-3">Main Program</h2>
+        <div class="short-line"></div>
+        <ul class="d-flex flex-column my-3 mx-2">
+          <li class="program-item bg-light bg-opacity-10 py-3">
+            <div class="my-auto">
+              <img
+                src="img/user-voice-line.svg"
+                alt="Opening Ceremony icon"
+                class="w-150"
+              />
+            </div>
+            <h4 class="text-center my-auto primary-color w-25">
+              Opening Ceremony
+            </h4>
+            <p class="text-start my-auto w-50">
+              Join us for an always memorable opening ceremony, followed by
+              welcome remarks
+            </p>
+          </li>
+          <li class="program-item bg-light bg-opacity-10 py-3">
+            <div class="my-auto">
+              <img
+                src="img/bit-coin-line.svg"
+                alt="bitcoin icon"
+                class="w-150"
+              />
+            </div>
+            <h4 class="text-center my-auto primary-color w-25">
+              Web3 & Metaverse
+            </h4>
+            <p class="text-start my-auto w-50">
+              Blockchain technology is radically transforming the banking and
+              financial sector.
+            </p>
+          </li>
+          <li class="program-item bg-light bg-opacity-10 py-3">
+            <div class="my-auto">
+              <img
+                src="img/lightbulb-flash-line.svg"
+                alt="Creativity icon"
+                class="w-150"
+              />
+            </div>
+            <h4 class="text-center my-auto primary-color w-25">Creativity</h4>
+            <p class="text-start my-auto w-50">
+              Seth Dobrin (IBM) Seth is an industry recognized trailblazer of AI
+              innovations.
+            </p>
+          </li>
+          <li class="program-item bg-light bg-opacity-10 py-3">
+            <div class="my-auto">
+              <img
+                src="img/hub_white_24dp.svg"
+                alt="Workshop icon"
+                class="w-150"
+              />
+            </div>
+            <h4 class="text-center my-auto primary-color w-25">Workshop</h4>
+            <p class="text-start my-auto w-50">
+              We will work together to build motivation, and explain why the
+              workshop is important.
+            </p>
+          </li>
+          <li class="program-item bg-light bg-opacity-10 py-3">
+            <div class="my-auto">
+              <img
+                src="img/military_tech_white_24dp.svg"
+                alt="Honoring icon"
+                class="w-150"
+              />
+            </div>
+            <h4 class="text-center my-auto primary-color w-25">Honoring</h4>
+            <p class="text-start my-auto w-50">
+              Leaders demonstrate respect through both self-respect and the
+              respect of others
+            </p>
+          </li>
+        </ul>
+        <div>
+          <button type="button" class="attend-btn mb-3 text-white" id="joinUs">
+            Book a ticket for TNW conference.
+          </button>
+        </div>
+      </section>
+      <section
+        id="speackers"
+        class="d-flex flex-column align-items-center p-4 bg-light"
+      >
+        <h2 class="text-center mt-4 secondary-color">Featured Speackers</h2>
+        <div class="short-line my-3"></div>
+        <ul class="speackers-list" id="speackers-list"></ul>
+        <div>
+          <button
+            type="button"
+            class="show-more-btn m-3 secondary-color w-75 only-mobile"
+          >
+            MORE
+            <img src="img/expand_more_black_24dp.svg" alt="expand_more icon" />
+          </button>
+        </div>
+      </section>
+      <section
+        id="partners"
+        class="partners d-flex flex-column justify-content-center align-items-center only-desktop py-4"
+      >
+        <h3 class="text-center mt-3">Partners</h3>
+        <div class="short-line mx-auto mt-4"></div>
+        <div class="partners-logos mt-4">
+          <img src="img/partners/mozilla.svg" alt="mozilla icon" />
+          <img src="img/partners/google.svg" alt="google icon" />
+          <img src="img/partners/naver.svg" alt="naver icon" />
+          <img src="img/partners/tokopedia.png" alt="tokopedia icon" />
+          <img src="img/partners/airbnb.svg" alt="airbnb icon" />
+        </div>
+      </section>
+    </main>
+    <footer class="d-flex justify-content-center align-items-center py-5 gap-5">
+      <div class="only-desktop py-4">
+        <img src="img/TNW_Logo.png" alt="TNW logo" />
+      </div>
+      <div class="only-desktop py-4">
+        <p>TNW is a Financial Times company.</p>
+        <p>
+          Copyright © 2006—2022, The Next Web B.V. Made with &#10084; in
+          Amsterdam, Some Rights Reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="./assets/js/main.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
