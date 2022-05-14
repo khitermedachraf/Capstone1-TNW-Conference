@@ -5,9 +5,12 @@
 
 ## *Microverse First Capstone Project*
 
-> Description: This is my final project for HTML & CSS MODULE from the microverse curriculum.
-> 
+> **Europe's leading tech festival: TNW Conference is a 2-day technology event in the greater Amsterdam area, where industry leaders and tech enthusiasts alike come together, to explore how tech will shape the world of tomorrow.**
+
+> This is my final project for HTML & CSS MODULE from the microverse curriculum.
+
 > This project is meant to test student ability's on being able to put together all that they have learnt in a module to ensure they mastered it well.
+
 
 ## :red_circle: Live Demo
 
